@@ -1,178 +1,203 @@
+# ⚡️ Network Monitoring Toolkit ⚙️
 
-# Network Monitoring Toolkit
+*A comprehensive, open-source toolkit designed to empower system administrators, cybersecurity professionals, and network engineers to monitor, analyze, and visualize their networks effectively.*
 
-A comprehensive, open-source toolkit designed to help system administrators, cybersecurity professionals, and network engineers monitor, analyze, and visualize their networks effectively.
-
-<p align="center">
-  <img src="banner.png" alt="Network Monitoring Toolkit Banner" width="600"/>
-</p>
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-lightgrey)
+![Docker](https://img.shields.io/badge/docker-supported-blue)
+![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![Bash](https://img.shields.io/badge/bash-5.0%2B-green)
 
 ---
 
-## Features
+## ✨ Features
 
-- Real-time network monitoring using Prometheus and Grafana
-- Host and service status tracking with Zabbix and Nagios
-- Custom scripts for port scanning, ping sweeps, and bandwidth usage
-- Preconfigured alerting rules and dashboards
-- Modular and extensible design for custom environments
+- 🔍 **Real-time monitoring** with **Prometheus** and **Grafana**
+- ✅ **Status tracking** using **Zabbix** and **Nagios**
+- 🛠️ Custom scripts for **ping sweeps**, **port scans**, and **bandwidth monitoring**
+- 🚨 Preconfigured **alerting rules** and **dashboards**
+- 🧩 Modular and extensible design for custom environments
 
-## Repository Structure
+---
 
-```
+## 📁 Repository Structure
+
+```bash
 network-monitoring-toolkit/
-├── scripts/                  # Bash and Python scripts for scanning and monitoring
-├── config/                   # Configuration files (SNMP, Prometheus, etc.)
-├── dashboards/               # Grafana dashboards in JSON format
-├── tools/                    # Setup guides for open-source tools
-├── alerts/                   # Prebuilt alert rules for Prometheus/Zabbix
-├── docs/                     # Usage guide and architecture diagrams
+├── scripts/         # Bash & Python utilities
+├── config/          # Tool configurations (SNMP, Prometheus, etc.)
+├── dashboards/      # JSON Grafana dashboards
+├── tools/           # Setup guides for each tool
+├── alerts/          # Alert rules (Prometheus, Zabbix)
+├── docs/            # Usage guides & diagrams
 ├── LICENSE
 ├── README.md
 └── CONTRIBUTING.md
 ```
 
-## Quick Start
+---
 
-1. **Clone the repo**:
-   ```bash
-   git clone https://github.com/your-username/network-monitoring-toolkit.git
-   cd network-monitoring-toolkit
-   ```
+## ⚡ Quick Start
 
-2. **Make scripts executable**:
-   ```bash
-   chmod +x scripts/*.sh
-   ```
+### 1. Clone the Repository
 
-3. **Run the ping sweep script**:
-   ```bash
-   ./scripts/ping_sweep.sh 192.168.1
-   ```
+```bash
+git clone https://github.com/your-username/network-monitoring-toolkit.git
+cd network-monitoring-toolkit
+```
 
-4. **Set up monitoring tools**:
-   - Follow `tools/setup_prometheus.md` to configure Prometheus + Grafana
-   - Use `tools/setup_zabbix.md` or `tools/setup_nagios.md` for full-stack monitoring
+### 2. Make Scripts Executable
 
-## Live Demo (Terminal Menu)
+```bash
+chmod +x scripts/*.sh
+```
 
-Want to try out the toolkit in action? Run the interactive menu:
+### 3. Run a Ping Sweep
+
+```bash
+./scripts/ping_sweep.sh 192.168.1
+```
+
+### 4. Set Up Monitoring Tools
+
+- 📘 `tools/setup_prometheus.md`
+- 🔍 `tools/setup_zabbix.md`
+- 🧪 `tools/setup_nagios.md`
+
+---
+
+## 🎮 Live Demo (Interactive Terminal Menu)
+
+Experience the toolkit in action:
 
 ```bash
 chmod +x scripts/live_demo.sh
 ./scripts/live_demo.sh
 ```
 
-This script lets you:
-- Run a ping sweep on any subnet
-- Scan open ports on a target IP
-- Monitor real-time bandwidth usage
+This interactive script allows you to:
 
-## Requirements
+- 🛰️ Run ping sweeps
+- 🔓 Scan open ports
+- 📡 Monitor real-time bandwidth
 
-- Linux (preferred) or macOS
-- Bash and Python 3
-- Docker (optional, for containerized deployments)
-- Admin access to monitoring targets (SNMP, SSH, etc.)
+---
 
-## Tools Used
+## ⚙️ Requirements
 
-- [Prometheus](https://prometheus.io)
-- [Grafana](https://grafana.com)
-- [Zabbix](https://www.zabbix.com)
-- [Nagios Core](https://www.nagios.org/projects/nagios-core/)
-- [Wireshark](https://www.wireshark.org)
+- 🐧 Linux or macOS
+- 🐍 Python 3 & Bash
+- 🐳 Docker (optional)
+- 🔐 Admin access (SNMP, SSH, etc.)
 
-## Scripts Included
+---
 
-- `ping_sweep.sh` – Ping a subnet and list online hosts
-- `port_scanner.py` – Scan specified ports on a host
-- `bandwidth_monitor.sh` – Monitor bandwidth with ifstat (optional)
-- `live_demo.sh` – Interactive menu for running demo tools
+## 🧰 Tools Utilized
 
-## Screenshots & Dashboards
+| Tool        | Purpose                         |
+|-------------|----------------------------------|
+| [Prometheus](https://prometheus.io) | Time-series data & metrics |
+| [Grafana](https://grafana.com)     | Visual dashboards          |
+| [Zabbix](https://www.zabbix.com)   | Agent-based monitoring     |
+| [Nagios](https://www.nagios.org)   | Legacy-friendly monitoring |
+| [Wireshark](https://www.wireshark.org) | Packet analysis         |
 
-> Add screenshots of your Grafana dashboard or terminal output here for visual appeal.
+---
 
-## Roadmap
+## 📜 Included Scripts
 
-- [ ] Add Docker Compose setup for Prometheus + Grafana
-- [ ] Add email/SMS alerting setup guide
-- [ ] Add CLI launcher for all scripts
-- [ ] Add Ansible playbook for tool installation
+| Script Name             | Description                     |
+|-------------------------|----------------------------------|
+| `ping_sweep.sh`         | Ping an entire subnet            |
+| `port_scanner.py`       | Scan TCP ports on a host         |
+| `bandwidth_monitor.sh`  | Monitor interface bandwidth      |
+| `live_demo.sh`          | Launch terminal demo UI          |
 
-## Contributing
+---
 
-Contributions are welcome! Please open an issue or pull request. See `CONTRIBUTING.md` for more.
+## 📸 Screenshots
 
-## License
+### 📊 Grafana Dashboard
+
+![Grafana Dashboard](screenshots/grafana_dashboard.png)
+
+### 🖥️ Zabbix Monitoring Interface
+
+![Zabbix Interface](screenshots/zabbix_interface.png)
+
+### 🖥️ Nagios Monitoring Dashboard
+
+![Nagios Dashboard](screenshots/nagios_dashboard.png)
+
+*Note: Replace the image paths with actual screenshots from your project.*
+
+---
+
+## 🛣️ Roadmap
+
+- [ ] Docker Compose setup for Prometheus + Grafana
+- [ ] Email/SMS alerting setup guide
+- [ ] CLI launcher for all scripts
+- [ ] Ansible playbook for tool installation
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or pull request. See `CONTRIBUTING.md` for more information.
+
+---
+
+## ⚖️ License
 
 This project is licensed under the MIT License. See `LICENSE` for details.
 
-## Author
+---
 
-Created and maintained by Ainny1
+## ✍️ Author
+
+Created and maintained by **Ainny1**
+
+# 🤝 Contributing to Network Monitoring Toolkit
+
+First off, thanks for taking the time to contribute!
 
 ---
 
-## 1. `port_scanner.py` (Python TCP Port Scanner)
+## How to Contribute
 
-```python
-#!/usr/bin/env python3
-import socket
-import sys
+### 🐛 Report Bugs
+If you find a bug, please open an issue with:
+- A clear title and description
+- Steps to reproduce the issue
+- Your operating system and environment
 
-if len(sys.argv) != 3:
-    print("Usage: python3 port_scanner.py <target_ip> <start-end>")
-    sys.exit(1)
+### 🌟 Feature Requests
+Have a cool idea? We’d love to hear it!
+Open an issue and label it as a `feature request`.
 
-target = sys.argv[1]
-port_range = sys.argv[2]
-start_port, end_port = map(int, port_range.split('-'))
-
-print(f"Scanning {target} from port {start_port} to {end_port}...")
-
-for port in range(start_port, end_port + 1):
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.settimeout(0.5)
-    result = sock.connect_ex((target, port))
-    if result == 0:
-        print(f"Port {port} is OPEN")
-    sock.close()
-
-print("Scan complete.")
-```
-
-**Save as:** `scripts/port_scanner.py`  
-**Make it executable:**
-```bash
-chmod +x scripts/port_scanner.py
-```
+### 👨‍💻 Submit Pull Requests
+- Fork this repository
+- Create a new branch (`git checkout -b feature-name`)
+- Make your changes
+- Test your changes
+- Commit and push (`git commit -m 'Add new feature'`)
+- Open a pull request with a description of what you’ve done
 
 ---
 
-## 2. `bandwidth_monitor.sh` (Real-Time Interface Monitor)
+## Code Style
 
-```bash
-#!/bin/bash
+- Use descriptive commit messages
+- Follow naming conventions and formatting used in the project
+- Keep pull requests focused and minimal
 
-# Requires: ifstat
-# Install: sudo apt install ifstat (Debian/Ubuntu) or brew install ifstat (macOS)
+---
 
-if ! command -v ifstat &> /dev/null; then
-    echo "Error: ifstat is not installed."
-    echo "Install it with: sudo apt install ifstat"
-    exit 1
-fi
+## 🛡️ Code of Conduct
 
-echo "Monitoring bandwidth (eth0)... Press Ctrl+C to stop."
-ifstat -i eth0 1
-```
+Please be respectful in all interactions. Harassment, hate speech, and discrimination will not be tolerated.
 
-**Save as:** `scripts/bandwidth_monitor.sh`  
-**Make it executable:**
-```bash
-chmod +x scripts/bandwidth_monitor.sh
-```
+---
 
- 
+Thank you for helping us make this toolkit awesome!
