@@ -200,4 +200,4 @@ Please be respectful in all interactions. Harassment, hate speech, and discrimin
 
 ---
 
-Thank you for helping us make this toolkit awesome!
+Thank you for helping me make this toolkit awesome!
