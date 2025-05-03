@@ -28,7 +28,7 @@ network-monitoring-toolkit/
 
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/your-username/network-monitoring-toolkit.git
+   git clone https://github.com/Ainny1/network-monitoring-toolkit.git
    cd network-monitoring-toolkit
 
 Make scripts executable:
