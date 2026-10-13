@@ -10,7 +10,7 @@
 
 ---
 
-## ✨ Features
+**Architecture and lab validation:** [View the Mermaid monitoring diagram and safe validation guide](docs/architecture-and-validation.md).\n\n> **Portfolio note:** The architecture diagram is illustrative; integrations and alerts should be considered unverified until tested and documented.\n\n## ✨ Features
 
 - 🔍 **Real-time monitoring** with **Prometheus** and **Grafana**
 - ✅ **Status tracking** using **Zabbix** and **Nagios**
@@ -42,7 +42,7 @@ network-monitoring-toolkit/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/network-monitoring-toolkit.git
+git clone https://github.com/Ainny1/Network-monitoring-toolkit.git
 cd network-monitoring-toolkit
 ```
 
@@ -129,7 +129,7 @@ This interactive script allows you to:
 
 ![Nagios Dashboard](screenshots/nagios_dashboard.png)
 
-*Note: Replace the image paths with actual screenshots from your project.*
+*Note: Screenshot paths are placeholders until genuine, redacted lab captures are added. Do not interpret them as validated results.*
 
 ---
 
