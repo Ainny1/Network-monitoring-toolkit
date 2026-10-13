@@ -1,6 +1,6 @@
 # Network Monitoring Toolkit
 
-Small, bounded network diagnostic tools for **owned or explicitly authorized** systems. This repository currently contains working *implementations* of basic reachability checks, TCP connect checks, and Linux interface byte-counter sampling, plus offline unit tests. End-to-end lab validation is still pending.
+Small, bounded network diagnostic tools for **owned or explicitly authorized** systems. This repository currently contains working *implementations* of basic reachability checks, TCP connect checks, and Linux interface byte-counter sampling, plus offline unit tests. A local Docker Compose Prometheus + Grafana lab is now configured, but **runtime validation and real screenshots are still pending**.
 
 ## Implemented
 
@@ -48,9 +48,21 @@ For Linux interface counters: `bash scripts/bandwidth_monitor.sh lo`.
 - [ ] Real monitoring dashboard configured and validated
 - [ ] Redacted evidence and screenshots captured
 
+## Optional local monitoring dashboard
+
+The repository includes a **Prometheus + Grafana** Docker Compose lab, with a provisioned Prometheus self-monitoring dashboard. It is not a claim that monitoring services are currently running.
+
+1. Install Docker Desktop (Linux containers).
+2. Copy `.env.example` to `.env` and replace the placeholder Grafana admin password.
+3. Run `docker compose config` then `docker compose up -d`.
+4. Open `http://127.0.0.1:3000` and view **Network Toolkit | Prometheus Health**.
+5. Follow the [full monitoring lab guide](docs/monitoring-lab.md) to validate the services and capture genuine screenshots.
+
+No dashboard screenshots are included until the lab is actually run.
+
 ## Planned integrations
 
-Prometheus, Grafana, Zabbix, Nagios, alert rules, and dashboards are **ideas for future work**, not currently deployed features. Screenshots are not included until real lab captures are available.
+Prometheus and Grafana configuration files are included for a local lab, **not yet runtime-verified**. Zabbix, Nagios, host/network exporters, and alert rules remain future work. Screenshots are not included until real lab captures are available.
 
 ## Contributing and license
 

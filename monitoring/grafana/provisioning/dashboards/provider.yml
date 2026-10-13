@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: network-toolkit
+    orgId: 1
+    folder: Network Toolkit
+    type: file
+    disableDeletion: true
+    editable: false
+    options:
+      path: /var/lib/grafana/dashboards
