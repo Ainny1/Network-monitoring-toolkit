@@ -60,6 +60,10 @@ The repository includes a **Prometheus + Grafana** Docker Compose lab, with a pr
 
 No dashboard screenshots are included until the lab is actually run.
 
+## AWS deployment preparation
+
+An optional [AWS private EC2 template and deployment checklist](aws/README.md) is included. **No cloud resources have been created, and no charges have been authorized.** The template has no inbound security-group rules and is designed for access through AWS Systems Manager. It requires explicit cost review and manual setup before it can run.
+
 ## Planned integrations
 
 Prometheus and Grafana configuration files are included for a local lab, **not yet runtime-verified**. Zabbix, Nagios, host/network exporters, and alert rules remain future work. Screenshots are not included until real lab captures are available.
