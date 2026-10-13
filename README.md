@@ -10,7 +10,22 @@
 
 ---
 
-**Architecture and lab validation:** [View the Mermaid monitoring diagram and safe validation guide](docs/architecture-and-validation.md).\n\n> **Portfolio note:** The architecture diagram is illustrative; integrations and alerts should be considered unverified until tested and documented.\n\n## ✨ Features
+## 🗺️ Network Monitoring Architecture
+
+```mermaid
+flowchart LR
+  A["Authorized lab devices"] --> B["Collection & checks"]
+  B --> C["Metrics monitoring"]
+  B --> D["Diagnostic scripts"]
+  C --> E["Dashboards & alerts"]
+  D --> F["Reviewed output"]
+  E --> G["SOC / network analyst"]
+  F --> G
+```
+
+*Illustrative architecture—not a claim that every monitoring integration is deployed.* See the [validation and evidence guide](docs/architecture-and-validation.md) for safe testing and limitations.
+
+## ✨ Features
 
 - 🔍 **Real-time monitoring** with **Prometheus** and **Grafana**
 - ✅ **Status tracking** using **Zabbix** and **Nagios**
