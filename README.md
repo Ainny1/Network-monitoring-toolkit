@@ -1,5 +1,8 @@
 # Network Monitoring Toolkit
 
+[![Unit tests and shell syntax](https://github.com/Ainny1/Network-monitoring-toolkit/actions/workflows/tests.yml/badge.svg)](https://github.com/Ainny1/Network-monitoring-toolkit/actions/workflows/tests.yml)
+
+
 Small, bounded network diagnostic tools for **owned or explicitly authorized** systems. This repository currently contains working *implementations* of basic reachability checks, TCP connect checks, and Linux interface byte-counter sampling, plus offline unit tests. A local Docker Compose Prometheus + Grafana lab is now configured, but **runtime validation and real screenshots are still pending**.
 
 ## Implemented
@@ -24,6 +27,15 @@ flowchart LR
 ```
 
 The dashboard integration is **not implemented**. See [architecture and validation](docs/architecture-and-validation.md) and [quick start](docs/quickstart.md).
+
+## Documentation
+
+- [Quick start and commands](docs/quickstart.md)
+- [Troubleshooting local diagnostics](docs/troubleshooting.md)
+- [Architecture and validation status](docs/architecture-and-validation.md)
+- [Local Prometheus/Grafana lab setup](docs/monitoring-lab.md)
+
+The CI badge reports the GitHub Actions workflow state; it does **not** verify that the optional monitoring dashboard is deployed or working.
 
 ## Quick start
 
